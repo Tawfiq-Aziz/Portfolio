@@ -126,13 +126,25 @@
 <section id="skills" class="skills-section">
   <h2>Skills</h2>
   <div class="text">
-    I have hands-on experience in both frontend and backend development. My main tech stack includes HTML, CSS, JavaScript on the frontend and php (laravel) with MySQL on the backend. 
-    I enjoy working on  <a href="https://roadmap.sh/full-stack" target="_blank" rel="noopener noreferrer">full-stack</a> projects and constantly exploring new tools and technologies.
-    Currently, I’m enrolled in <a href="https://discord.gg/d3Qx6qh8" target="_blank" rel="noopener noreferrer"> CSE391: Programming for the Internet</a> at my university, which is helping me strengthen my understanding of web development principles and practices.
-  </div>
+    <h3>Data Science & Machine Learning</h3>
+    <p>I'm passionate about data science and machine learning, with hands-on experience in:</p>
+    <ul>
+      <li>Python (NumPy, Pandas, scikit-learn, TensorFlow, PyTorch)</li>
+      <li>Data analysis and visualization (Matplotlib, Seaborn, Plotly)</li>
+      <li>Machine learning model development and deployment</li>
+      <li>Statistical analysis and data preprocessing</li>
+    </ul>
 
-
-
+    <h3>Full-Stack Development</h3>
+    <p>I also have strong development skills in:</p>
+    <ul>
+      <li>Frontend: HTML, CSS, JavaScript, React</li>
+      <li>Backend: Python, PHP (Laravel), Node.js</li>
+      <li>Databases: MySQL, MongoDB, PostgreSQL</li>
+      <li>Version Control: Git, GitHub</li>
+    </ul>
+    
+    <p>I enjoy working on <a href="https://roadmap.sh/full-stack" target="_blank" rel="noopener noreferrer">full-stack</a> projects and constantly exploring new tools and technologies to enhance my skills in both data science and web development.</p>
   </div>
 </section>
 
@@ -204,17 +216,26 @@
       Want to collaborate or have a project in mind? I’m always open to new opportunities or freelance work. Feel free to reach out through email or the form. Let’s build something cool together!
     </div>
 
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name">
+    <form id="contact-form" action="https://formspree.io/f/manpajbd" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
 
-      <label for="email">Email</label>
-      <input type="email" id="email">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
 
-      <label for="message">Message</label>
-      <textarea id="message" cols="30" rows="10"></textarea>
-
-      <button type="submit">Send Message</button>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit">Send Message</button>
+      </div>
+      <div id="form-status" class="form-status"></div>
     </form>
   </div>
 </section>
@@ -223,10 +244,64 @@
 
   <footer class="footer">
     <p>&copy; 2025 Tawfiq Aziz Khan Rafi. All rights reserved.</p>
-
     <div id="page-info"></div>
-    
-
   </footer>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      const submitButton = form.querySelector('button[type="submit"]');
+      const originalButtonText = submitButton.textContent;
+      
+      try {
+        // Show loading state
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+        submitButton.style.opacity = '0.7';
+        
+        const formData = new FormData(event.target);
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/x-www-form-urlencoded'
+          }
+        });
+
+        const responseData = await response.json().catch(() => ({}));
+        
+        if (response.ok) {
+          formStatus.textContent = 'Message sent successfully! I\'ll get back to you soon.';
+          formStatus.className = 'form-status success';
+          form.reset();
+        } else {
+          console.error('Form submission failed:', {
+            status: response.status,
+            statusText: response.statusText,
+            response: responseData
+          });
+          throw new Error(responseData.error || 'Failed to send message');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        formStatus.textContent = 'Oops! There was a problem sending your message. Please try again or email me directly at tawfiqaziz.khan.rafi@g.bracu.ac.bd';
+        formStatus.className = 'form-status error';
+      } finally {
+        // Reset button state
+        submitButton.disabled = false;
+        submitButton.textContent = originalButtonText;
+        submitButton.style.opacity = '1';
+        
+        // Scroll to the status message
+        formStatus.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    form.addEventListener('submit', handleSubmit);
+  </script>
 </body>
 </html>
