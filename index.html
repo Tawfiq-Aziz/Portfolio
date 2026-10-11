@@ -1,288 +1,509 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="styles.css">
-
-<style>
-  #education {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
-  }
-
-  #education h2 {
-    font-size: 28px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  #education .group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-
-  #education .text {
-    text-align: center;
-  }
-
-  #education .text h3 {
-    margin: 0 0 10px;
-    font-size: 20px;
-  }
-
-  #education .text p {
-    margin: 4px 0;
-    font-size: 14px;
-  }
-
-</style>
-
-  <title>Portfolio</title>
-</head>
-<body>
-  <!-- NAVBAR -->
-  <nav>
-    <div class="left">
-      <a href="/">Tawfiq Aziz Khan Rafi</a>
-    </div>
-
-    <div class="right">
-      <a href="https://github.com/Tawfiq-Aziz" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-github"></i>
-        <span>Github</span>
-      </a>
-      
-      <a href="https://www.linkedin.com/in/tawfiq-aziz-khan-rafi-b1546014a" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-linkedin"></i>
-        <span>Linkedin</span>
-      </a>
-      
-      <a href="mailto:tawfiqaziz.khan.rafi@g.bracu.ac.bd">
-        <i class="fa-solid fa-envelope"></i>
-        <span>Email</span>
-      </a>
-    </div>
-  </nav>
-
-  <main>
-   <!-- SECTION 1: Hero -->
-<section class="hero-section">
-  <div class="text">
-    <h2>Hi, I'm Rafi 👋</h2>
-    <p>
-      I'm Tawfiq Aziz Khan Rafi, a Computer Science student at 
-      <a href="https://www.bracu.ac.bd" target="_blank" rel="noopener noreferrer">BRAC University</a>
-      . I'm passionate about machine learning, backend engineering, and data-driven problem solving. I enjoy building scalable backend systems with Laravel, PHP, Python, 
-      and JavaScript, as well as developing intelligent ML models
-       and applications. Outside of academics, I like watching anime, playing football and badminton, and diving into new tech content.
-    </p>
-
-
-    <div class="links">
-      <a href="#skills">
-        <i class="fa-solid fa-code"></i>
-        <span>Skills</span>
-      </a>
-
-
-      <a href="projects.html">
-        <i class="fa-solid fa-project"></i>
-        <span>⚒️Projects</span>
-      </a>
-
-      <a href="#education">
-        <i class="fa-solid fa-education"></i>
-        <span>📖Education</span>
-      </a>
-
-      <a href="#contact">
-        <i class="fa-solid fa-envelope"></i>
-        <span>Contact</span>
-      </a>
-    </div>
-  </div>
-
-  <div class="headshot">
-    <img src="images/tawfiq-headshot.webp" alt="Tawfiq Aziz Khan Rafi headshot">
-  </div>
-</section>
-
-<!-- SECTION 2: Skills -->
-<section id="skills" class="skills-section">
-  <h2>Skills</h2>
-  <div class="text">
-    <h3>Data Science & Machine Learning</h3>
-    <p>I'm passionate about data science and machine learning, with hands-on experience in:</p>
-    <ul>
-      <li>Python (NumPy, Pandas, scikit-learn, TensorFlow, PyTorch)</li>
-      <li>Data analysis and visualization (Matplotlib, Seaborn, Plotly)</li>
-      <li>Machine learning model development and deployment</li>
-      <li>Statistical analysis and data preprocessing</li>
-    </ul>
-
-    <h3>Full-Stack Development</h3>
-    <p>I also have strong development skills in:</p>
-    <ul>
-      <li>Frontend: HTML, CSS, JavaScript, React</li>
-      <li>Backend: Python, PHP (Laravel), Node.js</li>
-      <li>Databases: MySQL, MongoDB, PostgreSQL</li>
-      <li>Version Control: Git, GitHub</li>
-    </ul>
-    
-    <p>I enjoy working on <a href="https://roadmap.sh/full-stack" target="_blank" rel="noopener noreferrer">full-stack</a> projects and constantly exploring new tools and technologies to enhance my skills in both data science and web development.</p>
-  </div>
-</section>
-
-
-<!-- SECTION5: Education -->
-<section id="education">
-  <h2>Education</h2>
-
-  <div class="group">
-    <div class="text">
-      <h3><a href="https://sristy.edu.bd/college/" target="_blank" rel="noopener noreferrer"> Sristy Academic School, Tangail</a></h3>
-
-      <img src="https://sristy.edu.bd/wp-content/uploads/2019/01/SCT.png.webp" alt="Sristy Academic School Logo" width="120" />
-      <p>High School</p>
-      <p>Graduated 2019</p>
-      
-    </div>
-  </div>
-
-  <div class="group">
-    <div class="text">
-      <h3><a href="https://www.dcc.edu.bd/" target="_blank" rel="noopener noreferrer">Dhaka Commerce College</a></h3>
-
-      <img src="https://www.dcc.edu.bd/media/ico/dcc-logo.png" alt="Dhaka Commerce College Logo" width="120" />
-      <p>HSC (Higher Secondary Certificate)</p>
-      <p>2019 - 2021</p>
-   
-    </div>
-  </div>
-
-  <div class="group">
-    <div class="text">
-      <h3><a href="https://www.bracu.ac.bd" target="_blank" rel="noopener noreferrer">BRAC University</a></h3>
-
-      <img src="https://www.bracu.ac.bd/sites/all/themes/sloth/images/f-logo.svg" alt="BRAC University Logo" width="120" />
-      <p>Bsc in Computer Science</p>
-      <p>2022 - Present</p>
-      
-    </div>
-  </div>
-</section>
-
-
-<!-- SECTION 6: Contact -->
-<section id="contact" class="contact-section">
-  <h2>Contact</h2>
-
-  <div class="group">
-    <div class="text">
-      Want to collaborate or have a project in mind? I’m always open to new opportunities or freelance work. Feel free to reach out through email or the form. Let’s build something cool together!
-    </div>
-
-    <form id="contact-form" action="https://formspree.io/f/manpajbd" method="POST">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tawfiq Aziz Khan Rafi — Computer Science student at BRAC University. Machine learning, backend engineering, and full-stack projects."
+    />
+    <title>Rafi — Code & Curiosity</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark" aria-hidden="true">&#123; r &#125;</span
+        ><span
+          ><span class="brand-name">Rafi's little corner</span
+          ><span class="brand-caption"
+            >CODE, CURIOSITY &amp; THINGS I BUILD</span
+          ></span
+        ></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="projects.html">Projects</a
+        ><a href="index.html#skills">Skills</a
+        ><a href="index.html#education">Education</a
+        ><a class="button button-outline" href="index.html#contact"
+          >Say hello
+          <span aria-hidden="true"
+            ><svg
+              class="arrow-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M6 18 18 6M6 6h12v12" /></svg></span
+        ></a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="intro-title">
+        <div class="hero-copy">
+          <p class="eyebrow">A CS STUDENT'S LITTLE CORNER OF THE INTERNET</p>
+          <h1 id="intro-title">
+            A curious mind.<br />A love for building.<br /><em
+              >Hi, I'm Rafi.</em
+            >
+          </h1>
+          <p class="hero-description">
+            I'm Tawfiq Aziz Khan Rafi, a Computer Science student at
+            <a
+              href="https://www.bracu.ac.bd"
+              target="_blank"
+              rel="noopener noreferrer"
+              >BRAC University</a
+            >. I explore machine learning, build backend systems, and turn ideas
+            into practical projects.
+          </p>
+          <a class="button" href="projects.html"
+            >Explore my projects
+            <span aria-hidden="true"
+              ><svg
+                class="arrow-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M6 18 18 6M6 6h12v12" /></svg></span
+          ></a>
+          <p class="small-note">Learning by doing. One project at a time.</p>
+        </div>
+        <figure class="portrait">
+          <div class="portrait-frame">
+            <img
+              src="images/tawfiq-headshot.webp"
+              alt="Tawfiq Aziz Khan Rafi"
+              fetchpriority="high"
+            />
+          </div>
+          <figcaption>
+            <span>A little curiosity goes a long way.</span
+            ><span>01 / The person behind the code</span>
+          </figcaption>
+        </figure>
+      </section>
+      <div class="interest-strip">
+        <span
+          ><span class="status-dot" aria-hidden="true"></span>Always learning,
+          always building</span
+        ><span
+          >Machine learning <b aria-hidden="true">✳</b> Backend engineering
+          <b aria-hidden="true">✳</b> Full-stack development</span
+        ><a href="#work">Take a look around ↓</a>
       </div>
+      <section id="work" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">IDEAS PUT INTO PRACTICE</p>
+            <h2>Selected projects</h2>
+          </div>
+          <p>
+            A few things I've built.<br />Explore the code and the ideas behind
+            it.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Machine learning</span><span>01</span>
+            </div>
+            <h3>Breast Cancer Detection</h3>
+            <p>Breast cancer detection using machine learning model</p>
+            <div class="project-bottom">
+              <span class="technology">Python</span
+              ><a
+                href="https://github.com/Tawfiq-Aziz/breast-cancer-detection"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Breast Cancer Detection on GitHub"
+                >View on GitHub
+                <span aria-hidden="true"
+                  ><svg
+                    class="arrow-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 18 18 6M6 6h12v12" /></svg></span
+              ></a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Web development</span><span>03</span>
+            </div>
+            <h3>Cosmo Connect</h3>
+            <p>A social network platform with CRUD Features.</p>
+            <div class="project-bottom">
+              <span class="technology">Laravel, CSS, JS, MySQL</span
+              ><a
+                href="https://github.com/Tawfiq-Aziz/bracu_social"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Cosmo Connect on GitHub"
+                >View on GitHub
+                <span aria-hidden="true"
+                  ><svg
+                    class="arrow-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 18 18 6M6 6h12v12" /></svg></span
+              ></a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Web development</span><span>05</span>
+            </div>
+            <h3>Spice &amp; Surprise</h3>
+            <p>
+              A food review platform with spice meter, hygiene rating, and
+              vendor dashboards.
+            </p>
+            <div class="project-bottom">
+              <span class="technology">PHP, HTML, CSS, MySQL</span
+              ><a
+                href="https://github.com/Tawfiq-Aziz/Spice_and_Surprise"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Spice &amp; Surprise on GitHub"
+                >View on GitHub
+                <span aria-hidden="true"
+                  ><svg
+                    class="arrow-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 18 18 6M6 6h12v12" /></svg></span
+              ></a>
+            </div>
+          </article>
+        </div>
+        <a class="text-link all-projects" href="projects.html"
+          >See all seven projects
+          <svg
+            class="arrow-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            aria-hidden="true"
+          >
+            <path d="M6 18 18 6M6 6h12v12" /></svg
+        ></a>
+      </section>
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE TOOLS I WORK WITH</p>
+            <h2>Skills &amp; interests</h2>
+          </div>
+          <p>
+            From exploring data<br />to building systems that connect people.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <article>
+            <span class="small-label">01 / DATA &amp; INTELLIGENCE</span>
+            <h3>Data science &amp;<br />machine learning</h3>
+            <ul>
+              <li>Python · NumPy · Pandas · scikit-learn</li>
+              <li>TensorFlow · PyTorch</li>
+              <li>Matplotlib · Seaborn · Plotly</li>
+              <li>Statistical analysis &amp; data preprocessing</li>
+              <li>Model development &amp; deployment</li>
+            </ul>
+          </article>
+          <article>
+            <span class="small-label">02 / BUILDING FOR THE WEB</span>
+            <h3>Full-stack<br />development</h3>
+            <ul>
+              <li>HTML · CSS · JavaScript · React</li>
+              <li>Python · PHP / Laravel · Node.js</li>
+              <li>MySQL · MongoDB · PostgreSQL</li>
+              <li>Git · GitHub</li>
+              <li>Scalable backend systems</li>
+            </ul>
+          </article>
+        </div>
+        <p class="skills-note">
+          I enjoy exploring
+          <a
+            class="text-link"
+            href="https://roadmap.sh/full-stack"
+            target="_blank"
+            rel="noopener noreferrer"
+            >full-stack development
+            <svg
+              class="arrow-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M6 18 18 6M6 6h12v12" /></svg
+          ></a>
+          and finding new ways to solve problems with code. Away from the
+          keyboard, you'll find me watching anime, playing football or
+          badminton, and diving into new tech content.
+        </p>
+      </section>
+      <section id="education" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A LITTLE OF MY JOURNEY</p>
+            <h2>Learning along the way</h2>
+          </div>
+        </div>
+        <div class="education-list">
+          <article>
+            <span class="small-label">2022 — PRESENT</span>
+            <div>
+              <h3>
+                <a
+                  href="https://www.bracu.ac.bd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >BRAC University
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 18 18 6M6 6h12v12" /></svg
+                ></a>
+              </h3>
+              <p>BSc in Computer Science</p>
+            </div>
+          </article>
+          <article>
+            <span class="small-label">2019 — 2021</span>
+            <div>
+              <h3>
+                <a
+                  href="https://www.dcc.edu.bd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Dhaka Commerce College
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 18 18 6M6 6h12v12" /></svg
+                ></a>
+              </h3>
+              <p>HSC (Higher Secondary Certificate)</p>
+            </div>
+          </article>
+          <article>
+            <span class="small-label">GRADUATED 2019</span>
+            <div>
+              <h3>
+                <a
+                  href="https://sristy.edu.bd/college/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Sristy Academic School, Tangail
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 18 18 6M6 6h12v12" /></svg
+                ></a>
+              </h3>
+              <p>High School</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="contact" class="section contact-section">
+        <div class="contact-heading">
+          <p class="eyebrow">GOOD THINGS START WITH A HELLO</p>
+          <h2>Have an idea<br /><em>we could build together?</em></h2>
+          <p>
+            A collaboration, a project, or just a friendly hello.<br />I'm open
+            to new opportunities and freelance work.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-copy">
+            <h3>Let's talk.</h3>
+            <p>
+              Tell me what you have in mind.<br />You can use the form or email
+              me directly.
+            </p>
+            <a
+              class="text-link email-link"
+              href="mailto:tawfiqaziz.khan.rafi@g.bracu.ac.bd"
+              >tawfiqaziz.khan.rafi@g.bracu.ac.bd
+              <svg
+                class="arrow-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M6 18 18 6M6 6h12v12" /></svg
+            ></a>
+          </div>
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/manpajbd"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
 
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit">Send Message</button>
+            </div>
+            <div
+              id="form-status"
+              class="form-status"
+              role="status"
+              aria-live="polite"
+            ></div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>© 2026 Tawfiq Aziz Khan Rafi</p>
+      <div>
+        <a
+          href="https://github.com/Tawfiq-Aziz"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub
+          <svg
+            class="arrow-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            aria-hidden="true"
+          >
+            <path d="M6 18 18 6M6 6h12v12" /></svg></a
+        ><a
+          href="https://www.linkedin.com/in/tawfiq-aziz-khan-rafi-b1546014a"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn
+          <svg
+            class="arrow-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            aria-hidden="true"
+          >
+            <path d="M6 18 18 6M6 6h12v12" /></svg></a
+        ><a href="#top">Back to top ↑</a>
       </div>
+    </footer>
+    <script>
+      const form = document.getElementById("contact-form");
+      const formStatus = document.getElementById("form-status");
 
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-      </div>
-      
-      <div class="form-group">
-        <button type="submit">Send Message</button>
-      </div>
-      <div id="form-status" class="form-status"></div>
-    </form>
-  </div>
-</section>
+      async function handleSubmit(event) {
+        event.preventDefault();
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.textContent;
 
-  </main>
+        try {
+          // Show loading state
+          submitButton.disabled = true;
+          submitButton.textContent = "Sending...";
+          submitButton.style.opacity = "0.7";
 
-  <footer class="footer">
-    <p>&copy; 2025 Tawfiq Aziz Khan Rafi. All rights reserved.</p>
-    <div id="page-info"></div>
-  </footer>
-
-  <script>
-    const form = document.getElementById('contact-form');
-    const formStatus = document.getElementById('form-status');
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
-      const submitButton = form.querySelector('button[type="submit"]');
-      const originalButtonText = submitButton.textContent;
-      
-      try {
-        // Show loading state
-        submitButton.disabled = true;
-        submitButton.textContent = 'Sending...';
-        submitButton.style.opacity = '0.7';
-        
-        const formData = new FormData(event.target);
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: formData,
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/x-www-form-urlencoded'
-          }
-        });
-
-        const responseData = await response.json().catch(() => ({}));
-        
-        if (response.ok) {
-          formStatus.textContent = 'Message sent successfully! I\'ll get back to you soon.';
-          formStatus.className = 'form-status success';
-          form.reset();
-        } else {
-          console.error('Form submission failed:', {
-            status: response.status,
-            statusText: response.statusText,
-            response: responseData
+          const formData = new FormData(event.target);
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: new URLSearchParams(formData),
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
           });
-          throw new Error(responseData.error || 'Failed to send message');
-        }
-      } catch (error) {
-        console.error('Error:', error);
-        formStatus.textContent = 'Oops! There was a problem sending your message. Please try again or email me directly at tawfiqaziz.khan.rafi@g.bracu.ac.bd';
-        formStatus.className = 'form-status error';
-      } finally {
-        // Reset button state
-        submitButton.disabled = false;
-        submitButton.textContent = originalButtonText;
-        submitButton.style.opacity = '1';
-        
-        // Scroll to the status message
-        formStatus.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }
-    }
 
-    form.addEventListener('submit', handleSubmit);
-  </script>
-</body>
+          const responseData = await response.json().catch(() => ({}));
+
+          if (response.ok) {
+            formStatus.textContent =
+              "Message sent successfully! I'll get back to you soon.";
+            formStatus.className = "form-status success";
+            form.reset();
+          } else {
+            console.error("Form submission failed:", {
+              status: response.status,
+              statusText: response.statusText,
+              response: responseData,
+            });
+            throw new Error(responseData.error || "Failed to send message");
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          formStatus.textContent =
+            "Oops! There was a problem sending your message. Please try again or email me directly at tawfiqaziz.khan.rafi@g.bracu.ac.bd";
+          formStatus.className = "form-status error";
+        } finally {
+          // Reset button state
+          submitButton.disabled = false;
+          submitButton.textContent = originalButtonText;
+          submitButton.style.opacity = "1";
+
+          // Scroll to the status message
+          formStatus.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+      }
+
+      form.addEventListener("submit", handleSubmit);
+    </script>
+  </body>
 </html>
