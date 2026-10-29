@@ -10,186 +10,43 @@
     <title>CV Section</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      .cv-paper {
-        background: var(--charcoal-surface);
-        border: 1px solid var(--charcoal-border);
-        border-radius: 12px;
-        padding: 45px 50px;
-        max-width: 900px;
-        margin: 0 auto 60px;
-        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
-      }
-      .cv-paper-header {
-        border-bottom: 1px solid var(--charcoal-border);
-        padding-bottom: 24px;
-        margin-bottom: 30px;
-      }
-      .cv-paper-header h1 {
-        font-size: 34px;
-        margin-bottom: 6px;
-      }
-      .cv-contact-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-        font-size: 13px;
-        opacity: 0.85;
-      }
-      .cv-contact-row a {
-        text-decoration: underline;
-        text-underline-offset: 3px;
-      }
-      .cv-section {
-        margin-bottom: 32px;
-      }
-      .cv-section-title {
-        font-family: var(--serif);
-        font-size: 13px;
-        font-weight: 600;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        border-bottom: 1px solid var(--charcoal-border);
-        padding-bottom: 6px;
-        margin-bottom: 16px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-      }
-      .cv-item {
-        margin-bottom: 22px;
-      }
-      .cv-item:last-child {
-        margin-bottom: 0;
-      }
-      .cv-item-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        gap: 12px;
-        flex-wrap: wrap;
-        margin-bottom: 4px;
-      }
-      .cv-item-title {
-        font-size: 17px;
-        font-weight: 500;
-        font-family: var(--serif);
-      }
-      .cv-item-title a {
-        text-decoration: underline;
-        text-underline-offset: 3px;
-      }
-      .cv-item-subtitle {
-        font-size: 13px;
-        opacity: 0.8;
-      }
-      .cv-list {
-        margin: 10px 0 0;
-        padding-left: 20px;
-        font-size: 14px;
-        line-height: 1.7;
-        opacity: 0.9;
-      }
-      .cv-list li {
-        margin-bottom: 6px;
-      }
-      .cv-skills-grid {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 10px 20px;
-        font-size: 14px;
-        align-items: baseline;
-      }
-      .cv-skill-category {
-        font-weight: 500;
-        opacity: 0.85;
-      }
-      @media (max-width: 768px) {
-        .cv-paper {
-          padding: 28px 20px;
-        }
-        .cv-skills-grid {
-          grid-template-columns: 1fr;
-          gap: 6px;
-        }
-      }
-    </style>
   </head>
   <body id="top">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-      <div class="site-header-content">
-        <a class="brand" href="index.html"
-          ><span
-            ><span class="brand-name">Home</span
-            ></span
-          ></a
-        >
-        <nav aria-label="Main navigation">
-          <a href="projects.html">Projects</a
-          ><a href="index.html#skills">Skills</a
-          ><a href="cv.html" aria-current="page">CV</a
-          ><a href="index.html#contact">Contact</a
-          ><a class="button button-outline" href="index.html#contact"
-            >Say hello
-            <span aria-hidden="true"
-              ><svg
-                class="arrow-icon"
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                aria-hidden="true"
-              >
-                <path d="M6 18 18 6M6 6h12v12" /></svg></span
-          ></a>
-        </nav>
-      </div>
+      <nav class="nav-pill" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="cv.html" aria-current="page">CV</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
     </header>
 
-    <main id="main">
+    <main id="main" class="wrap">
       <section class="cv-header-intro">
-        <h1>My Resume</h1>
+        <p class="section-kicker">Resume</p>
+        <h1>Curriculum vitae</h1>
       </section>
 
-      <!-- Toolbar with Direct Download Button -->
       <section class="cv-toolbar" aria-label="CV download">
         <div class="cv-toolbar-meta">
           <span class="cv-file-title">Tawfiq_Aziz_Khan_Rafi_Resume.pdf</span>
-          <span class="cv-badge">PDF • Official Resume</span>
+          <span class="cv-badge">PDF</span>
         </div>
         <div class="cv-toolbar-actions">
           <a
-            class="button button-sm button-download"
+            class="btn btn-primary"
             href="resume.pdf"
             download="Tawfiq_Aziz_Khan_Rafi_Resume.pdf"
             aria-label="Download resume PDF"
           >
-            <svg
-              class="arrow-icon"
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              aria-hidden="true"
-            >
-              <path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" />
-            </svg>
             Download CV
           </a>
         </div>
       </section>
 
-      <!-- Clean Web CV Representation -->
       <article class="cv-paper" aria-label="Digital resume">
         <header class="cv-paper-header">
           <h1>Tawfiq Aziz Khan Rafi</h1>
@@ -203,7 +60,7 @@
 
         <section class="cv-section">
           <h2 class="cv-section-title">Summary</h2>
-          <p style="font-size: 14.5px; line-height: 1.8; opacity: 0.9;">
+          <p>
             Computer Science undergraduate with hands-on experience in full-stack web development, RESTful API design, and database optimization. Passionate about building secure, scalable applications.
           </p>
         </section>
@@ -226,15 +83,15 @@
             <div class="cv-item-header">
               <span class="cv-item-title">
                 Trip Hive
-                <a href="https://github.com/Tawfiq-Aziz/Trip-Hive" target="_blank" rel="noopener noreferrer" style="font-size: 13px; margin-left: 6px;">github.com/Tawfiq-Aziz/Trip-Hive</a>
+                <a href="https://github.com/Tawfiq-Aziz/Trip-Hive" target="_blank" rel="noopener noreferrer">github.com/Tawfiq-Aziz/Trip-Hive</a>
               </span>
               <span class="cv-item-subtitle">January 2026 — February 2026</span>
             </div>
             <ul class="cv-list">
               <li>Engineered Trip Hive, a full-stack hotel booking web application supporting seamless user workflows, secure role-based authentication, and real-time reservation tracking.</li>
               <li>Ensured cross-browser compatibility and seamless UI rendering, resulting in a 100% error-free user checkout and reservation experience during stress tests.</li>
-              <li>Developed an analytics dashboard for hotel managers, visualizing real-time metrics including revenue breakdown, occupancy rates, and profit margins to drive data-informed pricing strategies.</li>
-              <li>Architected Trip Hive, integrating Stripe API for secure online payments and creating a central dashboard for tracking hotel profit metrics and occupancy analytics.</li>
+              <li>Developed an analytics dashboard for hotel managers, visualizing real-time metrics including revenue breakdown, occupancy rates, and profit margins.</li>
+              <li>Integrated Stripe API for secure online payments and created a central dashboard for tracking hotel profit metrics and occupancy analytics.</li>
             </ul>
           </div>
 
@@ -242,15 +99,15 @@
             <div class="cv-item-header">
               <span class="cv-item-title">
                 Bracu Social
-                <a href="https://github.com/Tawfiq-Aziz/bracu_social" target="_blank" rel="noopener noreferrer" style="font-size: 13px; margin-left: 6px;">github.com/Tawfiq-Aziz/bracu_social</a>
+                <a href="https://github.com/Tawfiq-Aziz/bracu_social" target="_blank" rel="noopener noreferrer">github.com/Tawfiq-Aziz/bracu_social</a>
               </span>
               <span class="cv-item-subtitle">August 2025 — September 2025</span>
             </div>
             <ul class="cv-list">
-              <li>Engineered BRACU Social, a campus-exclusive full-stack social network implementing domain-restricted GSuite authentication to secure access for BRAC university students.</li>
-              <li>Implemented 1-on-1 direct messaging utilizing HTTP Short Polling mechanisms, optimizing payload size and handling concurrent daily message requests.</li>
-              <li>Built a custom Lost &amp; Found module and interactive Polling module, boosting campus community engagement and streamlining item recovery tracking.</li>
-              <li>Developed an integrated Calendar component enabling users to manage academic deadlines and personal tasks with 99.9% client-side state synchronization accuracy.</li>
+              <li>Engineered BRACU Social, a campus-exclusive full-stack social network implementing domain-restricted GSuite authentication for BRAC University students.</li>
+              <li>Implemented 1-on-1 direct messaging using HTTP short polling, optimizing payload size and handling concurrent daily message requests.</li>
+              <li>Built a custom Lost &amp; Found module and interactive polling module for campus community engagement.</li>
+              <li>Developed an integrated calendar component for academic deadlines and personal tasks.</li>
             </ul>
           </div>
 
@@ -258,15 +115,15 @@
             <div class="cv-item-header">
               <span class="cv-item-title">
                 Spice and Surprise
-                <a href="https://github.com/Tawfiq-Aziz/Spice_and_Surprise" target="_blank" rel="noopener noreferrer" style="font-size: 13px; margin-left: 6px;">github.com/Tawfiq-Aziz/Spice_and_Surprise</a>
+                <a href="https://github.com/Tawfiq-Aziz/Spice_and_Surprise" target="_blank" rel="noopener noreferrer">github.com/Tawfiq-Aziz/Spice_and_Surprise</a>
               </span>
               <span class="cv-item-subtitle">May 2025 — June 2025</span>
             </div>
             <ul class="cv-list">
-              <li>Engineered Spice and Surprise, a gamified street food discovery platform featuring crowd-sourced vendor mapping, time-sensitive quest challenges, and interactive coupon reward systems.</li>
-              <li>Developed a "Spin the Wheel" challenge engine using dynamic randomized algorithms, increasing daily user retention and engagement.</li>
-              <li>Architected a coupon generation and redemption module, implementing validation checks to process reward claims with 100% accuracy and prevent duplicate redemptions.</li>
-              <li>Architected a centralized admin control panel allowing administrators to create, schedule, and evaluate time-sensitive street food challenges and reward structures.</li>
+              <li>Engineered Spice and Surprise, a gamified street food discovery platform featuring crowd-sourced vendor mapping, quest challenges, and coupon rewards.</li>
+              <li>Developed a spin-the-wheel challenge engine using dynamic randomized algorithms.</li>
+              <li>Architected a coupon generation and redemption module with validation to prevent duplicate redemptions.</li>
+              <li>Built a centralized admin control panel for creating, scheduling, and evaluating time-sensitive challenges.</li>
             </ul>
           </div>
         </section>
@@ -275,16 +132,13 @@
           <h2 class="cv-section-title">Skills</h2>
           <div class="cv-skills-grid">
             <span class="cv-skill-category">Programming Languages:</span>
-            <span>Python, PHP, C, Javascript</span>
-
+            <span>Python, PHP, C, JavaScript</span>
             <span class="cv-skill-category">Frameworks:</span>
-            <span>Laravel, Express JS</span>
-
+            <span>Laravel, Express.js</span>
             <span class="cv-skill-category">Database Management:</span>
-            <span>MySQL, PostgreSQL, MariaDB, Mongo DB</span>
-
+            <span>MySQL, PostgreSQL, MariaDB, MongoDB</span>
             <span class="cv-skill-category">Version Control:</span>
-            <span>Git, Github</span>
+            <span>Git, GitHub</span>
           </div>
         </section>
       </article>
@@ -293,39 +147,9 @@
     <footer class="site-footer">
       <p>© 2026 Tawfiq Aziz Khan Rafi</p>
       <div>
-        <a
-          href="https://github.com/Tawfiq-Aziz"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub
-          <svg
-            class="arrow-icon"
-            width="14"
-            height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            aria-hidden="true"
-          >
-            <path d="M6 18 18 6M6 6h12v12" /></svg></a
-        ><a
-          href="https://www.linkedin.com/in/tawfiq-aziz-khan-rafi-b1546014a"
-          target="_blank"
-          rel="noopener noreferrer"
-          >LinkedIn
-          <svg
-            class="arrow-icon"
-            width="14"
-            height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            aria-hidden="true"
-          >
-            <path d="M6 18 18 6M6 6h12v12" /></svg></a
-        ><a href="#top">Back to top ↑</a>
+        <a href="https://github.com/Tawfiq-Aziz" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/tawfiq-aziz-khan-rafi-b1546014a" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#top">Back to top</a>
       </div>
     </footer>
   </body>

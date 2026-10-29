@@ -5,342 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Tawfiq Aziz Khan Rafi — Computer Science student at BRAC University."
+      content="Projects by Tawfiq Aziz Khan Rafi — Computer Science student at BRAC University."
     />
     <title>Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body id="top">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-      <div class="site-header-content">
-        <a class="brand" href="index.html"
-          ><span
-            ><span class="brand-name">Home</span
-            ></span
-          ></a
-        >
-        <nav aria-label="Main navigation">
-          <a href="projects.html" aria-current="page">Projects</a
-          ><a href="index.html#skills">Skills</a
-          ><a href="cv.html">CV</a
-          ><a href="index.html#contact">Contact</a
-          ><a class="button button-outline" href="index.html#contact"
-            >Say hello
-            <span aria-hidden="true"
-              ><svg
-                class="arrow-icon"
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                aria-hidden="true"
-              >
-                <path d="M6 18 18 6M6 6h12v12" /></svg></span
-          ></a>
-        </nav>
-      </div>
+      <nav class="nav-pill" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="cv.html">CV</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
     </header>
+
     <main id="main">
-      <section
-        class="section projects-collection"
-        aria-labelledby="projects-title"
-      >
+      <section class="section wrap" aria-labelledby="projects-title">
+        <p class="section-kicker">Archive</p>
         <div class="section-heading">
-          <h2 id="projects-title">The project collection</h2>
+          <h2 id="projects-title">All projects</h2>
+          <p>Web apps, machine learning work, and smaller experiments.</p>
         </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Web development</span><span>01</span>
+
+        <div class="case-list">
+          <article class="case-card">
+            <div>
+              <p class="case-meta">Web · 01</p>
+              <h3>Trip Hive</h3>
+              <p>A hotel booking platform with real-time reservation tracking, Stripe payments, and manager analytics.</p>
+              <p class="case-meta" style="margin-top: 16px; letter-spacing: 0.04em">React, Express.js, MongoDB</p>
+              <a class="btn btn-primary" href="https://github.com/Tawfiq-Aziz/Trip-Hive" target="_blank" rel="noopener noreferrer">View on GitHub</a>
             </div>
-            <h3>Trip Hive</h3>
-            <p>
-              A hotel booking platform with real-time reservation tracking,
-              Stripe payments, and manager analytics.
-            </p>
-            <div class="project-bottom">
-              <span class="technology">React, Express.js, MongoDB</span
-              ><a
-                href="https://github.com/Tawfiq-Aziz/Trip-Hive"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="View Trip Hive on GitHub"
-                >View on GitHub
-                <span aria-hidden="true"
-                  ><svg
-                    class="arrow-icon"
-              width="14"
-              height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    aria-hidden="true"
-                  >
-                    <path d="M6 18 18 6M6 6h12v12" /></svg></span
-              ></a>
+            <div class="device" aria-hidden="true">
+              <div class="device-chrome"><span></span><span></span><span></span></div>
+              <strong>Trip Hive</strong>
+              <p>Booking, payments, and hotel analytics.</p>
             </div>
           </article>
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Machine learning</span><span>02</span>
+
+          <article class="case-card">
+            <div>
+              <p class="case-meta">Machine learning · 02</p>
+              <h3>Breast Cancer Detection</h3>
+              <p>Breast cancer detection using a machine learning model.</p>
+              <p class="case-meta" style="margin-top: 16px; letter-spacing: 0.04em">Python</p>
+              <a class="btn btn-primary" href="https://github.com/Tawfiq-Aziz/breast-cancer-detection" target="_blank" rel="noopener noreferrer">View on GitHub</a>
             </div>
-            <h3>Breast Cancer Detection</h3>
-            <p>Breast cancer detection using machine learning model</p>
-            <div class="project-bottom">
-              <span class="technology">Python</span
-              ><a
-                href="https://github.com/Tawfiq-Aziz/breast-cancer-detection"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="View Breast Cancer Detection on GitHub"
-                >View on GitHub
-                <span aria-hidden="true"
-                  ><svg
-                    class="arrow-icon"
-              width="14"
-              height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    aria-hidden="true"
-                  >
-                    <path d="M6 18 18 6M6 6h12v12" /></svg></span
-              ></a>
+            <div class="device" aria-hidden="true">
+              <div class="device-chrome"><span></span><span></span><span></span></div>
+              <strong>Detection model</strong>
+              <p>Classification work in Python.</p>
             </div>
           </article>
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Machine learning</span><span>03</span>
+
+          <article class="case-card">
+            <div>
+              <p class="case-meta">Machine learning · 03</p>
+              <h3>Flat Price Prediction</h3>
+              <p>Flat price prediction using a machine learning model.</p>
+              <p class="case-meta" style="margin-top: 16px; letter-spacing: 0.04em">Python</p>
+              <a class="btn btn-primary" href="https://github.com/Tawfiq-Aziz/Flat-price-prediction/tree/main" target="_blank" rel="noopener noreferrer">View on GitHub</a>
             </div>
-            <h3>Flat Price Prediction</h3>
-            <p>Flat price prediction using machine learning model</p>
-            <div class="project-bottom">
-              <span class="technology">Python</span
-              ><a
-                href="https://github.com/Tawfiq-Aziz/Flat-price-prediction/tree/main"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="View Flat Price Prediction on GitHub"
-                >View on GitHub
-                <span aria-hidden="true"
-                  ><svg
-                    class="arrow-icon"
-              width="14"
-              height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    aria-hidden="true"
-                  >
-                    <path d="M6 18 18 6M6 6h12v12" /></svg></span
-              ></a>
+            <div class="device" aria-hidden="true">
+              <div class="device-chrome"><span></span><span></span><span></span></div>
+              <strong>Price model</strong>
+              <p>Regression work in Python.</p>
             </div>
           </article>
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Web development</span><span>04</span>
+
+          <article class="case-card">
+            <div>
+              <p class="case-meta">Web · 04</p>
+              <h3>BRACU Social</h3>
+              <p>A social network platform with CRUD features for campus life.</p>
+              <p class="case-meta" style="margin-top: 16px; letter-spacing: 0.04em">Laravel, CSS, JS, MySQL</p>
+              <a class="btn btn-primary" href="https://github.com/Tawfiq-Aziz/bracu_social" target="_blank" rel="noopener noreferrer">View on GitHub</a>
             </div>
-            <h3>BRACU Social</h3>
-            <p>A social network platform with CRUD Features.</p>
-            <div class="project-bottom">
-              <span class="technology">Laravel, CSS, JS, MySQL</span
-              ><a
-                href="https://github.com/Tawfiq-Aziz/bracu_social"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="View Cosmo Connect on GitHub"
-                >View on GitHub
-                <span aria-hidden="true"
-                  ><svg
-                    class="arrow-icon"
-              width="14"
-              height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    aria-hidden="true"
-                  >
-                    <path d="M6 18 18 6M6 6h12v12" /></svg></span
-              ></a>
+            <div class="device" aria-hidden="true">
+              <div class="device-chrome"><span></span><span></span><span></span></div>
+              <strong>BRACU Social</strong>
+              <p>Campus-only social tools.</p>
             </div>
           </article>
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Web development</span><span>05</span>
+
+          <article class="case-card">
+            <div>
+              <p class="case-meta">Web · 05</p>
+              <h3>Car Workshop Management</h3>
+              <p>A car management system with CRUD operations.</p>
+              <p class="case-meta" style="margin-top: 16px; letter-spacing: 0.04em">PHP, CSS, JS, MySQL</p>
+              <a class="btn btn-primary" href="https://github.com/Tawfiq-Aziz/car_workshop_project" target="_blank" rel="noopener noreferrer">View on GitHub</a>
             </div>
-            <h3>Car Workshop Management</h3>
-            <p>A car management system with CRUD operations.</p>
-            <div class="project-bottom">
-              <span class="technology">PHP, CSS, JS, MySQL</span
-              ><a
-                href="https://github.com/Tawfiq-Aziz/car_workshop_project"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="View Car Workshop Management on GitHub"
-                >View on GitHub
-                <span aria-hidden="true"
-                  ><svg
-                    class="arrow-icon"
-              width="14"
-              height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    aria-hidden="true"
-                  >
-                    <path d="M6 18 18 6M6 6h12v12" /></svg></span
-              ></a>
+            <div class="device" aria-hidden="true">
+              <div class="device-chrome"><span></span><span></span><span></span></div>
+              <strong>Workshop OS</strong>
+              <p>Jobs, records, and CRUD flows.</p>
             </div>
           </article>
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Web development</span><span>06</span>
+
+          <article class="case-card">
+            <div>
+              <p class="case-meta">Web · 06</p>
+              <h3>Spice &amp; Surprise</h3>
+              <p>A food review platform with spice meter, hygiene rating, and vendor dashboards.</p>
+              <p class="case-meta" style="margin-top: 16px; letter-spacing: 0.04em">PHP, HTML, CSS, MySQL</p>
+              <a class="btn btn-primary" href="https://github.com/Tawfiq-Aziz/Spice_and_Surprise" target="_blank" rel="noopener noreferrer">View on GitHub</a>
             </div>
-            <h3>Spice &amp; Surprise</h3>
-            <p>
-              A food review platform with spice meter, hygiene rating, and
-              vendor dashboards.
-            </p>
-            <div class="project-bottom">
-              <span class="technology">PHP, HTML, CSS, MySQL</span
-              ><a
-                href="https://github.com/Tawfiq-Aziz/Spice_and_Surprise"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="View Spice &amp; Surprise on GitHub"
-                >View on GitHub
-                <span aria-hidden="true"
-                  ><svg
-                    class="arrow-icon"
-              width="14"
-              height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    aria-hidden="true"
-                  >
-                    <path d="M6 18 18 6M6 6h12v12" /></svg></span
-              ></a>
+            <div class="device" aria-hidden="true">
+              <div class="device-chrome"><span></span><span></span><span></span></div>
+              <strong>Spice &amp; Surprise</strong>
+              <p>Reviews and vendor tools.</p>
             </div>
           </article>
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Web development</span><span>07</span>
+
+          <article class="case-card">
+            <div>
+              <p class="case-meta">Web · 07</p>
+              <h3>To-Do List App</h3>
+              <p>A todo list app with task creation, completion tracking, and local storage.</p>
+              <p class="case-meta" style="margin-top: 16px; letter-spacing: 0.04em">HTML, CSS, JS</p>
+              <a class="btn btn-primary" href="https://github.com/Tawfiq-Aziz/CSE391/tree/main/Todo_List" target="_blank" rel="noopener noreferrer">View on GitHub</a>
             </div>
-            <h3>To-Do List App</h3>
-            <p>
-              A todo list app with task creation, completion tracking, and local
-              storage to save progress.
-            </p>
-            <div class="project-bottom">
-              <span class="technology">HTML, CSS , JS</span
-              ><a
-                href="https://github.com/Tawfiq-Aziz/CSE391/tree/main/Todo_List"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="View To-Do List App on GitHub"
-                >View on GitHub
-                <span aria-hidden="true"
-                  ><svg
-                    class="arrow-icon"
-              width="14"
-              height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    aria-hidden="true"
-                  >
-                    <path d="M6 18 18 6M6 6h12v12" /></svg></span
-              ></a>
+            <div class="device" aria-hidden="true">
+              <div class="device-chrome"><span></span><span></span><span></span></div>
+              <strong>To-Do</strong>
+              <p>Local-first task tracking.</p>
             </div>
           </article>
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Tkinter GUI</span><span>08</span>
+
+          <article class="case-card">
+            <div>
+              <p class="case-meta">Tkinter · 08</p>
+              <h3>Hospital Waiting Room Management</h3>
+              <p>Tkinter app simulating patient queues and wait time management in hospitals.</p>
+              <p class="case-meta" style="margin-top: 16px; letter-spacing: 0.04em">Python, Tkinter</p>
+              <a class="btn btn-primary" href="https://github.com/Tawfiq-Aziz/Hospital-Waiting-Room-Management-System" target="_blank" rel="noopener noreferrer">View on GitHub</a>
             </div>
-            <h3>Hospital Waiting Room Management</h3>
-            <p>
-              Tkinter app simulating patient queues and wait time management in
-              hospitals.
-            </p>
-            <div class="project-bottom">
-              <span class="technology">Python, Tkinter</span
-              ><a
-                href="https://github.com/Tawfiq-Aziz/Hospital-Waiting-Room-Management-System"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="View Hospital Waiting Room Management on GitHub"
-                >View on GitHub
-                <span aria-hidden="true"
-                  ><svg
-                    class="arrow-icon"
-              width="14"
-              height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    aria-hidden="true"
-                  >
-                    <path d="M6 18 18 6M6 6h12v12" /></svg></span
-              ></a>
+            <div class="device" aria-hidden="true">
+              <div class="device-chrome"><span></span><span></span><span></span></div>
+              <strong>Waiting room</strong>
+              <p>Queue simulation in Tkinter.</p>
             </div>
           </article>
         </div>
       </section>
     </main>
+
     <footer class="site-footer">
       <p>© 2026 Tawfiq Aziz Khan Rafi</p>
       <div>
-        <a
-          href="https://github.com/Tawfiq-Aziz"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub
-          <svg
-            class="arrow-icon"
-              width="14"
-              height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            aria-hidden="true"
-          >
-            <path d="M6 18 18 6M6 6h12v12" /></svg></a
-        ><a
-          href="https://www.linkedin.com/in/tawfiq-aziz-khan-rafi-b1546014a"
-          target="_blank"
-          rel="noopener noreferrer"
-          >LinkedIn
-          <svg
-            class="arrow-icon"
-              width="14"
-              height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            aria-hidden="true"
-          >
-            <path d="M6 18 18 6M6 6h12v12" /></svg></a
-        ><a href="#top">Back to top ↑</a>
+        <a href="https://github.com/Tawfiq-Aziz" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/tawfiq-aziz-khan-rafi-b1546014a" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#top">Back to top</a>
       </div>
     </footer>
   </body>
